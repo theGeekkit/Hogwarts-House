@@ -5,5 +5,23 @@
 }
 .mat-form-field{
   text-align: center;
+  font-size: 25px;
+  color: black;
+  text-shadow: 3px 3px green;
+  padding: 0px;
 }
 
+.mat-select {
+  width: 200px;
+  font-size: 25px;
+  color: black;
+  text-shadow: 3px 3px green;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.mat-label{
+  color: black;
+  text-shadow: 3px 3px green;
+}
