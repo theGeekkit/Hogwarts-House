@@ -8,7 +8,8 @@ import { HouseComponent } from './user/House/House.component';
 import { AuthModelComponent } from './user/auth-model/auth-model.component';
 import { HeaderComponent } from './header/header.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {MatSelectModule} from '@angular/material/select';
     AppRoutingModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

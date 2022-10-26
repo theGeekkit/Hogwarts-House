@@ -1,15 +1,16 @@
-<form>
-  <mat-form-field appearance="fill" style="width: 250px;">
+<form [formGroup]="registrationService.loginForm" (ngSubmit)="registrationService.onSubmit()">
+  <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
-    <input matInput>
+    <input type="text" id="name" formControlName="name" class="form-control">
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>House</mat-label>
-    <mat-select>
+    <mat-select id="House" formControlName="House" class="form-control">
       <mat-option value="one">Gryffindor</mat-option>
       <mat-option value="two">Hufflepuff</mat-option>
       <mat-option value="three">Ravenclaw</mat-option>
       <mat-option value="four">Slytherin</mat-option>
     </mat-select>
   </mat-form-field>
+  <button type="submit" id="registrationSubmit"><img src="https://i.postimg.cc/sx55yvc4/quill.png" alt="quill">Save</button>
 </form>

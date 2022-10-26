@@ -1,1 +1,7 @@
-
+<div class="container" id="HouseListContainer" *ngIf="registrationService.emptyList">
+  <mat-card class="houseCard" *ngFor="let item of registrationService.register">
+    <div>{{item.name}} - {{item.house}}
+    </div>
+    <button class="remove" (click)="onDeleteRegister(item)">delete</button>
+  </mat-card>
+</div>

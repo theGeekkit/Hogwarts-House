@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistrationService } from 'src/app/Registration.service';
+import { Register } from '../Register';
 
 @Component({
   selector: 'app-House',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HouseComponent implements OnInit {
 
-  constructor() { }
+  constructor(public registrationService: RegistrationService) { }
 
   ngOnInit(): void {
   }
+
+  onDeleteRegister(index: Register) {
+    this.registrationService.register = this.registrationService.register.filter(register => register !== index)
+    console.log(this.registrationService.register)
+  }
+
 
 }
