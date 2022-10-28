@@ -15,7 +15,7 @@ export class RegistrationService implements OnInit{
 
   constructor() { }
 
-  loginForm: FormGroup;
+  loginForm!: FormGroup;
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
