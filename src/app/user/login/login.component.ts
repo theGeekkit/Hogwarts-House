@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RegistrationService } from 'src/app/Registration.service';
+import { RegistrationService } from 'src/app/registration.service';
 
 
 @Component({

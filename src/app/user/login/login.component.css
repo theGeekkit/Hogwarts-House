@@ -1,17 +1,20 @@
-.mat-label {
-  color: antiquewhite;
-  text-shadow: 3px 3px rgb(146, 129, 88);
+
+mat-form-field{
   text-align: center;
-}
-.mat-form-field{
-  text-align: center;
+  width: 300px;
   font-size: 25px;
+  margin-left: 8px;
   color: black;
   text-shadow: 3px 3px green;
   padding: 0px;
 }
+input {
 
-.mat-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+mat-select {
   width: 200px;
   font-size: 25px;
   color: black;
@@ -19,11 +22,12 @@
   padding: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+
 }
-.mat-label{
+mat-label{
   color: black;
   text-shadow: 3px 3px green;
+  text-align: center;
 }
 button {
   margin-left: 30px;
