@@ -10,9 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { from } from 'rxjs';
+
+import { SecretComponent } from './secret/secret.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { from } from 'rxjs';
     LoginComponent,
     HouseComponent,
     AuthModelComponent,
-    HeaderComponent
+    HeaderComponent,
+    SecretComponent
   ],
   imports: [
     BrowserModule,
