@@ -1,26 +1,19 @@
-<form formGroup ="registrationService.loginForm" (ngSubmit)="registrationService.onSubmit">
-  <mat-form-field appearance="fill">
-    <mat-label>Name</mat-label>
-    <input matInput type="text" id="name" formControlName="name" class="form-control">
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>House</mat-label>
-    <mat-select id="House" formControlName="House">
-      <mat-option value="one" name="Gryffindor">Gryffindor</mat-option>
-      <mat-option value="two" name="Hufflepuff"> Hufflepuff</mat-option>
-      <mat-option value="three" name="Ravenclaw"> Ravenclaw</mat-option>
-      <mat-option value="four">Slytherin</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <button type="submit" id="registrationSubmit"><img src="https://i.postimg.cc/sx55yvc4/quill.png" alt="quill">Save</button>
-</form>
+  <form formGroup ="registrationService.loginForm" (ngSubmit)="registrationService.onSubmit">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" id="name" formControlName="name" class="form-control">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>House</mat-label>
+      <mat-select id="House" formControlName="House">
+        <mat-option value="one" name="Gryffindor"><img width="30px" src="https://i.etsystatic.com/15977064/r/il/e2a629/1737233681/il_fullxfull.1737233681_tfs3.jpg"> Gryffindor</mat-option>
+        <mat-option value="two" name="Hufflepuff"> <img width="30px" src="https://i.pinimg.com/originals/33/c6/c7/33c6c70c4ddc4030c8a84c8cef99df4a.jpg"> Hufflepuff</mat-option>
+        <mat-option value="three" name="Ravenclaw"><img width="30px" src="https://th.bing.com/th/id/OIP.rwDj1zSgyEYtWazy__muaAHaJd?pid=ImgDet&rs=1"> Ravenclaw</mat-option>
+        <mat-option value="four"><img width="30px" src="https://i.etsystatic.com/15977064/r/il/e2a629/1737233681/il_fullxfull.1737233681_tfs3.jpg"> Slytherin</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button type="submit" id="registrationSubmit"><img src="https://i.postimg.cc/sx55yvc4/quill.png" alt="quill">Save</button>
+  </form>
 
 
-<!-- slytherin -->
-https://i.etsystatic.com/15977064/r/il/e2a629/1737233681/il_fullxfull.1737233681_tfs3.jpg
-<!-- ravenclaw -->
-https://th.bing.com/th/id/OIP.rwDj1zSgyEYtWazy__muaAHaJd?pid=ImgDet&rs=1
-<!-- hufflepuff -->
-https://i.pinimg.com/originals/33/c6/c7/33c6c70c4ddc4030c8a84c8cef99df4a.jpg
-<!-- Gryffindor -->
-https://i.pinimg.com/originals/68/d7/ba/68d7ba76d2373efb4dd8c66f1847d05b.jpg
+
