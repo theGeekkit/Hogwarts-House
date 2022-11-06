@@ -1,4 +1,6 @@
 
+
+
 mat-form-field{
   text-align: center;
   width: 300px;
@@ -9,7 +11,6 @@ mat-form-field{
   padding: 0px;
 }
 input {
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -30,7 +31,22 @@ mat-label{
   text-shadow: 3px 3px green;
   text-align: center;
 }
-button {
+
+#registrationSubmit {
   margin-left: 30px;
 }
 
+#secretButton {
+  margin-top: 30px;
+  width: 75px;
+  height: 55px;
+}
+
+h3 {
+  font-size: 100px;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  color: black;
+  text-shadow: 4px 4px rgb(138, 137, 137);
+}
