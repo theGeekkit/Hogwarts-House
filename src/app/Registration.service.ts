@@ -1,7 +1,7 @@
-import { Injectable } from "@angular/core";
+import { Injectable, Component, OnInit } from "@angular/core";
 import { Register } from "./user/Register";
 import { FormGroup, FormControl } from '@angular/forms';
-import { Component, OnInit } from "@angular/core";
+
 
 
 @Injectable({

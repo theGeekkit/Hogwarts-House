@@ -23,6 +23,7 @@ mat-select {
   display: flex;
   flex-direction: row;
 
+
 }
 mat-label{
   color: black;
@@ -32,3 +33,4 @@ mat-label{
 button {
   margin-left: 30px;
 }
+
