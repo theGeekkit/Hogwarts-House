@@ -1,7 +1,7 @@
 <div class="background"><h3>Registration</h3>
 <form
   formGroup="registrationService.loginForm"
-  (ngSubmit)="(registrationService.onSubmit)"
+  (ngSubmit)="onSubmit(f)" #f="ngForm"
 >
   <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
