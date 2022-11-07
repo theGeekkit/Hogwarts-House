@@ -1,6 +1,6 @@
 import { Injectable, Component, OnInit } from "@angular/core";
 import { Register } from "./user/Register";
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, NgForm } from '@angular/forms';
 
 
 
@@ -11,7 +11,7 @@ export class RegistrationService implements OnInit{
 
   emptyList = false
 
-  register: Register[] = [];
+  public register: Register[] = [];
 
   constructor() { }
 
@@ -24,11 +24,12 @@ export class RegistrationService implements OnInit{
     });
   }
 
-  onSubmit() {
+  onSubmit(form: NgForm) {
     this.register.push(this.loginForm.value);
     console.log(this.register)
     this.loginForm.reset()
-    this.emptyList = true
+    this.register.push(form.value)
+  }
   }
 
-}
+
