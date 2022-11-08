@@ -9,26 +9,28 @@ import { FormGroup, FormControl, NgForm } from '@angular/forms';
 })
 export class RegistrationService implements OnInit{
 
-  emptyList = false
+
 
   public register: Register[] = [];
 
-  constructor() { }
+
+  constructor() {
+    this.loginForm = new FormGroup({
+    name: new FormControl(null),
+    house: new FormControl(null),
+  }); }
 
   loginForm!: FormGroup;
 
   ngOnInit(): void {
-    this.loginForm = new FormGroup({
-      name: new FormControl(null),
-      house: new FormControl(null),
-    });
+
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit() {
     this.register.push(this.loginForm.value);
     console.log(this.register)
     this.loginForm.reset()
-    this.register.push(form.value)
+
   }
   }
 

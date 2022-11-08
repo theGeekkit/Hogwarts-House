@@ -12,8 +12,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
+import { FormsModule } from '@angular/forms';
 import { SecretComponent } from './secret/secret.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import { SecretComponent } from './secret/secret.component';
     MatCardModule,
     MatInputModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

@@ -1,39 +1,39 @@
 <div class="background"><h3>Registration</h3>
 <form
-  formGroup="registrationService.loginForm"
-  (ngSubmit)="onSubmit(f)" #f="ngForm"
->
+[formGroup]="registrationService.loginForm"
+(ngSubmit)="registrationService.onSubmit()" >
+  >
   <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
     <input
-      matInput
-      type="text"
-      id="name"
-      formControlName="name"
-      class="form-control"
+    matInput
+    type="text"
+    id="name"
+    formControlName="name"
+    class="form-control"
     />
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>House</mat-label>
-    <mat-select id="House" formControlName="House">
+    <mat-select id="House" formControlName="house">
       <mat-option value="one" name="Gryffindor"
-        ><img width="40px" src="/assets/Gryffindor.png" alt="G Logo" />
-        Gryffindor</mat-option
+      ><img width="40px" src="/assets/Gryffindor.png" alt="G Logo" />
+      Gryffindor</mat-option
       >
       <mat-option value="two" name="Hufflepuff">
         <img width="40px" src="/assets/Hufflepuff.png" /> Hufflepuff</mat-option
-      >
-      <mat-option value="three" name="Ravenclaw"
+        >
+        <mat-option value="three" name="Ravenclaw"
         ><img width="40px" src="/assets/RavenClaw.png" /> Ravenclaw</mat-option
-      >
-      <mat-option value="four" name="Slytherin"
+        >
+        <mat-option value="four" name="Slytherin"
         ><img width="40px" src="/assets/Slytherin.png" /> Slytherin</mat-option
-      >
-    </mat-select>
-  </mat-form-field>
-  <button type="submit" id="registrationSubmit">
-    <img src="https://i.postimg.cc/sx55yvc4/quill.png" alt="quill" />Save
-  </button>
+        >
+      </mat-select>
+    </mat-form-field>
+    <button type="submit" id="registrationSubmit">
+      <img src="https://i.postimg.cc/sx55yvc4/quill.png" alt="quill" />Save
+    </button>
 
 </form>
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RegistrationService } from 'src/app/Registration.service';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
