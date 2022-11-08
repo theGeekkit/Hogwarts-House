@@ -17,10 +17,13 @@ export class AppComponent {
     .subscribe((event: NavigationStart) => {
       console.log(event)
       if(event.url === '/House') {
-        this.imageUrl = 'url(https://i.postimg.cc/VNw8wKSn/d13c88d15dd34933ec9446c64c39419a6fc78387.jpg)'
+        this.imageUrl = 'url(https://i.postimg.cc/qv61556X/Wallpaper-Dog-964111.png)'
       } else if(event.url === '/login') {
         this.imageUrl = 'url(https://i.postimg.cc/6pwgpsNL/pexels-rodnae-productions-7978241.jpg)'
+      } else if(event.url === '/secret') {
+        this.imageUrl = 'url(https://i.postimg.cc/VNw8wKSn/d13c88d15dd34933ec9446c64c39419a6fc78387.jpg)'
       }
+
     });
   }
 }
