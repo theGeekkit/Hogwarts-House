@@ -36,10 +36,11 @@ mat-label{
   margin-left: 30px;
 }
 
-#secretButton {
+#HouseButton {
+  font-size: 35px;
   margin-top: 30px;
-  width: 75px;
-  height: 55px;
+  width: 150px;
+  height: 110px;
 }
 
 h3 {

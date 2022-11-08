@@ -16,29 +16,30 @@
   <mat-form-field appearance="fill">
     <mat-label>House</mat-label>
     <mat-select id="House" formControlName="house">
-      <mat-option value="one" name="Gryffindor"
+      <mat-option value="Gryffindor" name="Gryffindor"
       ><img width="40px" src="/assets/Gryffindor.png" alt="G Logo" />
       Gryffindor</mat-option
       >
-      <mat-option value="two" name="Hufflepuff">
+      <mat-option value="Hufflepuff" name="Hufflepuff">
         <img width="40px" src="/assets/Hufflepuff.png" /> Hufflepuff</mat-option
         >
-        <mat-option value="three" name="Ravenclaw"
+        <mat-option value="Ravenclaw" name="Ravenclaw"
         ><img width="40px" src="/assets/RavenClaw.png" /> Ravenclaw</mat-option
         >
-        <mat-option value="four" name="Slytherin"
+        <mat-option value="Slytherin" name="Slytherin"
         ><img width="40px" src="/assets/Slytherin.png" /> Slytherin</mat-option
         >
       </mat-select>
     </mat-form-field>
-    <button type="submit" id="registrationSubmit">
+    <button type="submit" (click)="registrationService.onSubmit" id="registrationSubmit">
       <img src="https://i.postimg.cc/sx55yvc4/quill.png" alt="quill" />Save
     </button>
 
 </form>
 
 
-<button id="secretButton" routerLink="/secret">Secret</button>
+
+<button id="HouseButton" routerLink="/House">House List</button>
 
 
 </div>

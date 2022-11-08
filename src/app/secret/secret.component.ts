@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistrationService } from '../Registration.service';
 
 @Component({
   selector: 'app-secret',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecretComponent implements OnInit {
 
-  constructor() { }
+  constructor(public registrationService: RegistrationService) { }
 
   ngOnInit(): void {
   }
