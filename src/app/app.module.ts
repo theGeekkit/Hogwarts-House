@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule } from '@angular/forms';
 import { SecretComponent } from './secret/secret.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SignInComponent } from './login/sign-in/sign-in.component';
+import { SignUpComponent } from './user/login/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HouseComponent,
     AuthModelComponent,
     HeaderComponent,
-    SecretComponent
+    SecretComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

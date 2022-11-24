@@ -6,3 +6,13 @@ h2 {
   color: black;
   text-shadow: 4px 4px rgb(138, 137, 137);
 }
+div.input {
+  display: flex;
+  justify-content: right;
+  color: black;
+  text-shadow: 2px 2px rgb(138, 137, 137);
+  margin-right: 35px;
+}
+button {
+margin-left: 5px;
+}
